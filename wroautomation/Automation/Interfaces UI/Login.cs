@@ -38,9 +38,6 @@ namespace wroautomation.Automation
             driver.FindElement(By.CssSelector(".custom-checkbox:nth-child(2) > .custom-control-label")).Click();
             driver.FindElement(By.CssSelector(".custom-checkbox:nth-child(3) > .custom-control-label")).Click();
             driver.FindElement(By.Id("currentAddress")).SendKeys("spring avenue 1234");
-
-
-
         }
     }
 }
