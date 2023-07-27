@@ -1,11 +1,8 @@
-﻿using System;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Interactions;
+﻿using OpenQA.Selenium;
 
 namespace wroautomation.Automation
 {
-	public class Formulario
+    public class Formulario
 	{
 		public void Formulariotest(IWebDriver driver)
 		{
