@@ -35,7 +35,6 @@ namespace wroautomation.Automation
 
             objlogin.LoginTest(driver);
             objformulario.Formulariotest(driver);
-
         }
 
         [Test]
@@ -50,7 +49,6 @@ namespace wroautomation.Automation
 
             objlogin.LoginTest(driver);
             objbook_store.book_storetest(driver);
-
         }
 
         //wait handler

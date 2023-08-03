@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 
-
 namespace wroautomation.Automation
 {
     public class Login
