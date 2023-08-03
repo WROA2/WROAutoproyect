@@ -43,6 +43,8 @@ namespace wroautomation
                 Console.WriteLine("Book deleted." + alertText2);
                 Thread.Sleep(1000);
                 alert2.Accept();
+                Thread.Sleep(4000);
+                driver.Quit();
             }
         }
     }
