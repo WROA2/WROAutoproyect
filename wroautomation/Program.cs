@@ -11,7 +11,6 @@ namespace wroautomation.Automation
         private IWebDriver driver;
 
         [Test]
-
         public void LoginPage()
         {
             //Inicializacion del Driver
@@ -23,15 +22,34 @@ namespace wroautomation.Automation
             //Uso de los metodos creados dentro de cada clase
             objlogin.LoginTest(driver);
         }
-        [Test]
 
+        [Test]
         public void Formulario()
         {
-            LoginPage();
-            //Creacion de objetos de cada clase (interfaz de usuario)
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://demoqa.com/login");
+            driver.Manage().Window.Maximize();
+            
+            Login objlogin = new Login();
             Formulario objformulario = new Formulario();
-            //Uso de los metodos creados dentro de cada clase
+
+            objlogin.LoginTest(driver);
             objformulario.Formulariotest(driver);
+
+        }
+
+        [Test]
+        public void book_store()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://demoqa.com/login");
+            driver.Manage().Window.Maximize();
+
+            Login objlogin = new Login();
+            book_store objbook_store = new book_store();
+
+            objlogin.LoginTest(driver);
+            objbook_store.book_storetest(driver);
 
         }
 
