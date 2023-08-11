@@ -8,6 +8,7 @@ namespace wroautomation
 		public void Formulariotest(IWebDriver driver)
         {
             driver.FindElement(By.XPath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[2]/span/div")).Click();
+
             bool waitForm1 = WaitHandler.ElementIsPresent(driver, By.XPath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[2]/div/ul/li/span"));
             if (waitForm1)
             {
@@ -17,6 +18,7 @@ namespace wroautomation
             {
                 driver.FindElement(By.Id("item-0")).Click();
             }
+
             driver.FindElement(By.Id("firstName")).Click();
             driver.FindElement(By.Id("firstName")).SendKeys("test1");
             Thread.Sleep(1000);

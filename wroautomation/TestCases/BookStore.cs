@@ -20,6 +20,7 @@ namespace wroautomation
                 {
                     driver.FindElement(By.XPath("//*[@id=\"gotoStore\"]")).Click();
                 }
+
                 Thread.Sleep(1000);
                 driver.FindElement(By.XPath("//*[@id=\"see-book-Git Pocket Guide\"]")).Click();
                 Thread.Sleep(2000);
