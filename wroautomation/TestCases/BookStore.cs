@@ -2,17 +2,17 @@
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
-using wroautomation.Automation;
+using wroautomation.Config;
 
 namespace wroautomation
 {
-    public class book_store
+    public class BookStore
     {
         public void book_storetest(IWebDriver driver)
         {
             {
-                bool waitform1 = Program.ElementIsPresent(driver, By.Id("gotoStore"));
-                if (waitform1)
+                bool waitForm1 = WaitHandler.ElementIsPresent(driver, By.Id("gotoStore"));
+                if (waitForm1)
                 {
                     driver.FindElement(By.Id("gotoStore")).Click();
                 }
