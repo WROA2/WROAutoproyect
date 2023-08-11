@@ -1,17 +1,15 @@
-﻿using System;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
-using wroautomation.Automation;
+﻿using OpenQA.Selenium;
+using wroautomation.Config;
 
 namespace wroautomation
 {
-	public class Formulario
+    public class Formulario
 	{
 		public void Formulariotest(IWebDriver driver)
         {
             driver.FindElement(By.XPath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[2]/span/div")).Click();
-            bool waitform1 = Program.ElementIsPresent(driver, By.XPath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[2]/div/ul/li/span"));
-            if (waitform1)
+            bool waitForm1 = WaitHandler.ElementIsPresent(driver, By.XPath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[2]/div/ul/li/span"));
+            if (waitForm1)
             {
                 driver.FindElement(By.XPath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[2]/div/ul/li")).Click();
             }
@@ -41,4 +39,3 @@ namespace wroautomation
         }
     }
 }
-
