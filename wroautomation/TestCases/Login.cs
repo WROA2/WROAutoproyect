@@ -1,12 +1,10 @@
 ﻿using OpenQA.Selenium;
-using System;
-
 
 namespace wroautomation
 {
     public class Login
     {
-            public void LoginTest(IWebDriver driver) //se debe enviar en el metodo el driver para que pueda enviar los elementos dentro del chrome
+        public void LoginTest(IWebDriver driver) //se debe enviar en el metodo el driver para que pueda enviar los elementos dentro del chrome
         {
             string value = Environment.GetEnvironmentVariable("wra");
             driver.FindElement(By.Id("userName")).Click();
