@@ -7,9 +7,9 @@ namespace wroautomation.Config
     {
         public static bool ElementIsPresent(IWebDriver driver, By locator)
         {
-                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
-                wait.Until(dvr => dvr.FindElement(locator));
-                return true;
-            }
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            wait.Until(dvr => dvr.FindElement(locator));
+            return true;
         }
     }
+}
